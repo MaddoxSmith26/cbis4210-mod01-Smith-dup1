@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header text-white text-center" style="background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33%, #FFFFFF 66%, #EF4135 66%);">
+                <h1><i class="fas fa-landmark me-3"></i>France - Cultural Tourism & Parisian Adventures</h1>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-12">
+                        <div class="alert" style="background: linear-gradient(45deg, #0055A4, #EF4135); color: white;">
+                            <h4><i class="fas fa-city me-2"></i>Two and a Half Days in Paris</h4>
+                            <p class="mb-0">Unlike Germany and Ireland where we focused on business and academics, France was pure cultural exploration. We spent our time discovering the beauty, history, and excitement of Paris - from world-famous landmarks to celebrating with locals as Paris won the Champions League!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card border-primary h-100">
+                            <div class="card-header text-white text-center" style="background-color: #0055A4;">
+                                <i class="fas fa-ship me-2"></i>Day 1: Seine River Dinner Cruise
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/Day_1.jpg') }}" class="img-fluid mb-3 rounded" alt="Day 1 - Seine River dinner cruise">
+                                <p class="card-text small">Started our Parisian adventure with an enchanting dinner cruise along the Seine River. As we dined on French cuisine, we watched the City of Light illuminate before our eyes, seeing iconic landmarks from a unique perspective as they reflected in the river's waters.</p>
+                                <div class="mt-2">
+                                    <small class="text-muted"><i class="fas fa-star me-1"></i>Highlights: French cuisine, illuminated landmarks, Seine River views</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-secondary h-100">
+                            <div class="card-header text-center" style="background-color: #FFFFFF; color: #000000;">
+                                <i class="fas fa-museum me-2"></i>Day 2: Art & Architecture
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/Day_2.jpg') }}" class="img-fluid mb-3 rounded" alt="Day 2 - Art & Architecture">
+                                <p class="card-text small">Immersed ourselves in world-class art at the Louvre, home to the Mona Lisa and countless masterpieces. Later explored the opulent Palace of Versailles with its stunning gardens and Hall of Mirrors. Ended the day ascending to the top of the Eiffel Tower for breathtaking panoramic views of Paris.</p>
+                                <div class="mt-2">
+                                    <small class="text-muted"><i class="fas fa-star me-1"></i>Highlights: Louvre masterpieces, Versailles palace, Eiffel Tower summit</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-danger h-100">
+                            <div class="card-header text-white text-center" style="background-color: #EF4135;">
+                                <i class="fas fa-church me-2"></i>Day 3: Historic Monuments & Celebration
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/Day_3.jpg') }}" class="img-fluid mb-3 rounded" alt="Day 3 - Historic Monuments & Celebration">
+                                <p class="card-text small">Explored Paris's most famous monuments including majestic cathedrals, the iconic Arc de Triomphe, and Napoleon's Tomb at Les Invalides. The day became even more special when we joined locals celebrating Paris Saint-Germain winning the Champions League - experiencing the city's passion firsthand!</p>
+                                <div class="mt-2">
+                                    <small class="text-muted"><i class="fas fa-star me-1"></i>Highlights: Cathedrals, Arc de Triomphe, Napoleon's Tomb, Champions League celebration</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card border-primary">
+                            <div class="card-header text-white" style="background-color: #0055A4;">
+                                <h5 class="mb-0"><i class="fas fa-landmark me-2"></i>Iconic Landmarks Visited</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fas fa-crown me-2"></i><strong>The Louvre:</strong> World's largest art museum with the Mona Lisa</li>
+                                    <li class="list-group-item"><i class="fas fa-castle me-2"></i><strong>Palace of Versailles:</strong> Opulent royal residence and gardens</li>
+                                    <li class="list-group-item"><i class="fas fa-tower me-2"></i><strong>Eiffel Tower:</strong> Climbed to the top for panoramic city views</li>
+                                    <li class="list-group-item"><i class="fas fa-arch-way me-2"></i><strong>Arc de Triomphe:</strong> Napoleon's triumphant monument</li>
+                                    <li class="list-group-item"><i class="fas fa-church me-2"></i><strong>Famous Cathedrals:</strong> Gothic architectural masterpieces</li>
+                                    <li class="list-group-item"><i class="fas fa-monument me-2"></i><strong>Napoleon's Tomb:</strong> Les Invalides historic complex</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-danger">
+                            <div class="card-header text-white" style="background-color: #EF4135;">
+                                <h5 class="mb-0"><i class="fas fa-heart me-2"></i>Cultural Experiences</h5>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item"><i class="fas fa-ship me-2"></i><strong>Seine Dinner Cruise:</strong> French cuisine with illuminated city views</li>
+                                    <li class="list-group-item"><i class="fas fa-palette me-2"></i><strong>Art Appreciation:</strong> Renaissance and classical masterpieces</li>
+                                    <li class="list-group-item"><i class="fas fa-camera me-2"></i><strong>Photography:</strong> Capturing iconic Parisian moments</li>
+                                    <li class="list-group-item"><i class="fas fa-trophy me-2"></i><strong>Sports Celebration:</strong> PSG Champions League victory with locals</li>
+                                    <li class="list-group-item"><i class="fas fa-walking me-2"></i><strong>City Exploration:</strong> Historic neighborhoods and streets</li>
+                                    <li class="list-group-item"><i class="fas fa-utensils me-2"></i><strong>French Cuisine:</strong> Authentic dining experiences</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-12 text-center">
+                        <img src="{{ url_for('static', filename='images/Eiffel_Tower_Paris.jpg') }}" class="img-fluid mb-4 rounded shadow" alt="Eiffel Tower at night - the embodiment of the Paris experience" style="max-height: 400px;">
+                    </div>
+                </div>
+                
+                <div class="alert alert-info">
+                    <h5><i class="fas fa-lightbulb me-2"></i>Key Takeaways from France</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Cultural Appreciation</h6>
+                            <ul class="small">
+                                <li>Art history and Renaissance masterpieces</li>
+                                <li>French architectural heritage</li>
+                                <li>Historic preservation and tourism</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Personal Growth</h6>
+                            <ul class="small">
+                                <li>Cultural sensitivity and exploration</li>
+                                <li>Appreciation for European history</li>
+                                <li>International travel confidence</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Life Experiences</h6>
+                            <ul class="small">
+                                <li>World-famous landmark visits</li>
+                                <li>Local celebration participation</li>
+                                <li>Culinary and artistic exploration</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert" style="background: linear-gradient(45deg, #0055A4, #EF4135); color: white;">
+                    <h4><i class="fas fa-star me-2"></i>Pure Cultural Tourism</h4>
+                    <p class="mb-3">France offered a completely different experience from our academic and business-focused time in Germany and Ireland. These two and a half days were dedicated to pure cultural immersion - exploring art, history, architecture, and French joie de vivre.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-eye me-2"></i>What Made It Special</h6>
+                            <ul class="small mb-0">
+                                <li>No academic pressure - pure exploration</li>
+                                <li>World's most famous cultural landmarks</li>
+                                <li>Authentic local experiences and celebrations</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-heart me-2"></i>Lasting Memories</h6>
+                            <ul class="small mb-0">
+                                <li>Dinner cruise along the illuminated Seine</li>
+                                <li>Standing before the Mona Lisa at the Louvre</li>
+                                <li>Celebrating with Parisians in the streets</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

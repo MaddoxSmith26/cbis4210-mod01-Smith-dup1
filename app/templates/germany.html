@@ -1,0 +1,176 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header text-white text-center" style="background: linear-gradient(90deg, #000000 33%, #FF0000 33%, #FF0000 66%, #FFCC00 66%);">
+                <h1><i class="fas fa-castle me-3"></i>Germany - Business Innovation & Design Thinking</h1>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h3><i class="fas fa-map-marker-alt me-2"></i>Cities & Universities Visited</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-university me-2"></i>Münster - University of Münster collaboration</li>
+                            <li class="list-group-item"><i class="fas fa-building me-2"></i>Walldorf - SAP Headquarters visit</li>
+                            <li class="list-group-item"><i class="fas fa-castle me-2"></i>Heidelberg - Historic university town</li>
+                            <li class="list-group-item"><i class="fas fa-cathedral me-2"></i>Cologne - Cultural exploration</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><i class="fas fa-lightbulb me-2"></i>Professional Experiences</h3>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-users me-2"></i>Design thinking project with German students</li>
+                            <li class="list-group-item"><i class="fas fa-laptop-code me-2"></i>SAP digital innovations tour</li>
+                            <li class="list-group-item"><i class="fas fa-handshake me-2"></i>International teamwork & collaboration</li>
+                            <li class="list-group-item"><i class="fas fa-chart-line me-2"></i>Business process analysis with Viadee</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card border-dark h-100">
+                            <div class="card-header text-white text-center" style="background-color: #000000;">
+                                <i class="fas fa-university me-2"></i>Münster University Experience
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/German_students.JPG') }}" class="img-fluid mb-3 rounded" alt="German students collaboration">
+                                <p class="card-text small">Collaborated with German MIS students on an innovative design thinking project for Viadee, a leading German IT consulting company. The German students gave us an authentic tour of their city, allowing us to experience genuine German college life while exploring Münster's beautiful architecture and local culture.</p>
+                                <div class="mt-2">
+                                    <small class="text-muted"><i class="fas fa-star me-1"></i>Highlights: Student collaboration, city tours, German university culture</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-danger h-100">
+                            <div class="card-header text-white text-center" style="background-color: #FF0000;">
+                                <i class="fas fa-laptop-code me-2"></i>SAP Headquarters - Walldorf
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/SAP_Headquarters.JPG') }}" class="img-fluid mb-3 rounded" alt="SAP Headquarters in Walldorf">
+                                <p class="card-text small">Dedicated an entire day to learning about SAP at their global headquarters in Walldorf. This immersive experience included tours of their cutting-edge digital innovations, enterprise software demonstrations, and insights into how SAP drives global digital transformation across industries.</p>
+                                <div class="mt-2">
+                                    <small class="text-muted"><i class="fas fa-star me-1"></i>Highlights: Full-day SAP immersion, enterprise software, digital innovation</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-warning h-100">
+                            <div class="card-header text-dark text-center" style="background-color: #FFCC00;">
+                                <i class="fas fa-castle me-2"></i>Heidelberg & Cologne
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/Munster_food.jpg') }}" class="img-fluid mb-3 rounded" alt="Local food from Münster">
+                                <p class="card-text small"><strong>Heidelberg:</strong> Explored the magnificent castle and wandered through the charming old town with its historic university atmosphere and cobblestone streets.</p>
+                                <p class="card-text small"><strong>Cologne:</strong> Visited the stunning Gothic cathedral and enjoyed the interactive Chocolate Museum, experiencing both spiritual and sweet sides of German culture.</p>
+                                <div class="mt-2">
+                                    <small class="text-muted"><i class="fas fa-star me-1"></i>Highlights: Castle tours, cathedral architecture, chocolate museum</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="alert" style="background: linear-gradient(45deg, #FF0000, #FFCC00); color: white;">
+                    <h4><i class="fas fa-handshake me-2"></i>International Business Collaboration</h4>
+                    <p class="mb-3">Working with University of Münster students on the Viadee design thinking project was a highlight of my German experience. This cross-cultural collaboration taught me invaluable lessons about international teamwork, different problem-solving approaches, and how cultural perspectives enhance creative solutions.</p>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-users me-2"></i>Team Dynamics</h6>
+                            <ul class="small mb-0">
+                                <li>Cross-cultural communication strategies</li>
+                                <li>Collaborative design thinking methodologies</li>
+                                <li>International project management approaches</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-chart-line me-2"></i>Business Impact</h6>
+                            <ul class="small mb-0">
+                                <li>Real-world IT consulting project experience</li>
+                                <li>Enterprise software solution development</li>
+                                <li>German business culture immersion</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="card border-dark">
+                            <div class="card-header text-white" style="background-color: #000000;">
+                                <h5 class="mb-0"><i class="fas fa-castle me-2"></i>Heidelberg Castle & Old Town</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/Heidelberg_Castle.jpg') }}" class="img-fluid mb-3 rounded" alt="Heidelberg Castle">
+                                <p class="card-text">Explored the romantic ruins of Heidelberg Castle, with its stunning views over the Neckar River and the old town below. Wandered through the historic old town's narrow cobblestone streets, soaking in the atmosphere of one of Germany's oldest university towns.</p>
+                                <ul class="small">
+                                    <li>Castle ruins and Renaissance architecture</li>
+                                    <li>Historic university town atmosphere</li>
+                                    <li>Cobblestone streets and traditional German architecture</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-danger">
+                            <div class="card-header text-white" style="background-color: #FF0000;">
+                                <h5 class="mb-0"><i class="fas fa-church me-2"></i>Cologne Cathedral & Chocolate</h5>
+                            </div>
+                            <div class="card-body">
+                                <img src="{{ url_for('static', filename='images/Cologne_Cathedral.JPG') }}" class="img-fluid mb-3 rounded" alt="Cologne Cathedral">
+                                <p class="card-text">Marveled at the Gothic splendor of Cologne Cathedral, one of Germany's most visited landmarks. Then indulged our senses at the Chocolate Museum, learning about the history and production of chocolate while enjoying delicious tastings.</p>
+                                <ul class="small">
+                                    <li>Gothic cathedral architecture and twin spires</li>
+                                    <li>Interactive chocolate-making demonstrations</li>
+                                    <li>Cultural blend of spiritual and culinary experiences</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4><i class="fas fa-building me-2"></i>Full-Day SAP Immersion Experience</h4>
+                <p>Dedicated an entire day to understanding SAP's role in global enterprise technology at their Walldorf headquarters. This comprehensive experience included facility tours, software demonstrations, and insights into how SAP's solutions power businesses worldwide. The visit directly connected my MIS studies to real-world enterprise software applications and digital transformation strategies.</p>
+                
+                <h4><i class="fas fa-users me-2"></i>German Student Life & Cultural Exchange</h4>
+                <p>The University of Münster students didn't just collaborate with us on projects—they became our cultural ambassadors. They showed us around their beautiful city, shared their student experiences, and helped us understand German university culture from an insider's perspective. This authentic cultural exchange enhanced our professional collaboration and created lasting international friendships.</p>
+                
+                <div class="alert alert-info">
+                    <h5><i class="fas fa-lightbulb me-2"></i>Key Takeaways from Germany</h5>
+                    <div class="row">
+                        <div class="col-md-4">
+                            <h6>Professional Growth</h6>
+                            <ul class="small">
+                                <li>Enterprise software expertise (SAP)</li>
+                                <li>International project management</li>
+                                <li>Cross-cultural business communication</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Cultural Understanding</h6>
+                            <ul class="small">
+                                <li>German university life and education</li>
+                                <li>Historic preservation and modernization</li>
+                                <li>Traditional and contemporary German culture</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4">
+                            <h6>Personal Development</h6>
+                            <ul class="small">
+                                <li>International collaboration skills</li>
+                                <li>Adaptability in foreign environments</li>
+                                <li>Global business perspective</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,353 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header bg-success text-white text-center">
+                <h1><i class="fas fa-clover me-3"></i>Ireland - The Emerald Isle</h1>
+            </div>
+            <div class="card-body">
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <h3><i class="fas fa-graduation-cap me-2"></i>Orcawise AI Training - Dublin</h3>
+                        <div class="card mb-3 border-warning">
+                            <div class="card-header bg-warning text-white">
+                                <strong>Certifications Earned</strong>
+                            </div>
+                            <div class="card-body">
+                                <ul class="list-unstyled mb-0">
+                                    <li class="mb-2"><i class="fas fa-certificate text-warning me-2"></i><strong>AI Literacy & Governance Certificate</strong><br>
+                                    <small class="text-muted">Comprehensive training on AI principles, ethics, and governance frameworks</small></li>
+                                    <li><i class="fas fa-certificate text-warning me-2"></i><strong>AI Prompt Engineering Certificate</strong><br>
+                                    <small class="text-muted">Advanced techniques for effective AI interaction and prompt design</small></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <h4>Technical Learning</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-robot me-2"></i>Hands-on AI development training</li>
+                            <li class="list-group-item"><i class="fas fa-code me-2"></i>Practical AI implementation projects</li>
+                            <li class="list-group-item"><i class="fas fa-shield-alt me-2"></i>AI ethics and responsible usage</li>
+                            <li class="list-group-item"><i class="fas fa-brain me-2"></i>Machine learning fundamentals</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><i class="fas fa-map-marker-alt me-2"></i>Irish Adventures</h3>
+                        <h4>Iconic Irish Experiences</h4>
+                        <ul class="list-group list-group-flush mb-3">
+                            <li class="list-group-item"><i class="fas fa-beer me-2"></i>Temple Bar & Traditional Irish Pubs</li>
+                            <li class="list-group-item"><i class="fas fa-glass-whiskey me-2"></i>Guinness Museum - Dublin's Famous Brewery</li>
+                            <li class="list-group-item"><i class="fas fa-water me-2"></i>The Forty Foot - Famous Swimming Spot</li>
+                            <li class="list-group-item"><i class="fas fa-mountain me-2"></i>Cliffs of Moher - Breathtaking Coastal Views</li>
+                        </ul>
+                        <h4>Irish Countryside Exploration</h4>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item"><i class="fas fa-leaf me-2"></i>Rolling green hills and pastoral landscapes</li>
+                            <li class="list-group-item"><i class="fas fa-home me-2"></i>Traditional Irish villages and communities</li>
+                            <li class="list-group-item"><i class="fas fa-camera me-2"></i>Ancient stone walls and historic sites</li>
+                            <li class="list-group-item"><i class="fas fa-music me-2"></i>Authentic pub sessions with local musicians</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="alert alert-success">
+                    <h4><i class="fas fa-lightbulb me-2"></i>Dublin Tech Scene Discovery</h4>
+                    <p class="mb-3">Dublin's reputation as a European tech hub became clear during my stay. The city hosts major tech companies' European headquarters, creating a vibrant ecosystem perfect for AI learning. The combination of traditional Irish culture with cutting-edge technology made it an ideal location for the Orcawise program.</p>
+                    
+                    <div class="row mb-4 justify-content-center">
+                        <div class="col-md-6">
+                            <div class="card border-success">
+                                <div class="card-header text-white text-center" style="background-color: #009639;">
+                                    <i class="fas fa-users me-2"></i>Study Abroad Team - AI Training
+                                </div>
+                                <div class="card-body p-2">
+                                    <img src="{{ url_for('static', filename='images/study-abroad-group.jpg') }}" 
+                                         alt="Study Abroad Group Photo" 
+                                         class="img-fluid rounded shadow-sm photo-img"
+                                         data-toggle="modal" data-target="#groupModal">
+                                    <div class="text-center mt-2">
+                                        <small class="text-muted">Our amazing study abroad cohort during Orcawise AI training in Dublin</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-star me-2"></i>Unforgettable Irish Moments</h6>
+                            <ul class="small mb-0">
+                                <li>Pint of Guinness at the brewery with panoramic Dublin views</li>
+                                <li>Exploring Temple Bar's cobblestone streets and live music</li>
+                                <li>Standing at the edge of the dramatic Cliffs of Moher</li>
+                                <li>The Forty Foot's famous swimming tradition</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <h6><i class="fas fa-heart me-2"></i>Authentic Irish Culture</h6>
+                            <ul class="small mb-0">
+                                <li>Traditional pub sessions with local musicians</li>
+                                <li>Conversations with friendly locals in countryside pubs</li>
+                                <li>Exploring hidden gems beyond Dublin's city center</li>
+                                <li>Experiencing Ireland's legendary hospitality firsthand</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-4">
+                        <div class="card border-success h-100">
+                            <div class="card-header text-white text-center" style="background-color: #009639;">
+                                <i class="fas fa-glass-whiskey me-2"></i>Guinness Museum
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text small">Explored Ireland's most famous brewery, learning about the history of Guinness while enjoying spectacular views of Dublin from the gravity bar. The perfect blend of cultural education and authentic Irish experience.</p>
+                                <div class="mt-3">
+                                    <img src="{{ url_for('static', filename='images/guinness-experience.jpg') }}" 
+                                         alt="Guinness Experience" 
+                                         class="img-fluid rounded shadow-sm photo-img"
+                                         data-toggle="modal" data-target="#guinnesModal">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Click to view full size</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-secondary h-100">
+                            <div class="card-header text-dark text-center" style="background-color: #ffffff; border-bottom: 2px solid #009639;">
+                                <i class="fas fa-mountain me-2"></i>Cliffs of Moher
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text small">Ventured to Ireland's most dramatic coastal cliffs, experiencing the raw beauty of the Atlantic coastline. This natural wonder showcased Ireland's stunning landscapes beyond the tech hubs and cities.</p>
+                                <div class="mt-3">
+                                    <img src="{{ url_for('static', filename='images/cliffs-of-moher.jpg') }}" 
+                                         alt="Cliffs of Moher Adventure" 
+                                         class="img-fluid rounded shadow-sm photo-img"
+                                         data-toggle="modal" data-target="#cliffsModal">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Click to view full size</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card border-warning h-100">
+                            <div class="card-header text-white text-center" style="background-color: #ff7f00;">
+                                <i class="fas fa-water me-2"></i>The Forty Foot
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text small">Visited Dublin's famous swimming spot in Sandycove, steeped in Irish literary history and local tradition. This iconic location provided insight into Dublin's unique cultural landmarks.</p>
+                                <div class="mt-3">
+                                    <img src="{{ url_for('static', filename='images/forty-foot.jpg') }}" 
+                                         alt="Forty Foot Experience" 
+                                         class="img-fluid rounded shadow-sm photo-img"
+                                         data-toggle="modal" data-target="#fortyFootModal">
+                                    <div class="text-center mt-1">
+                                        <small class="text-muted">Click to view full size</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <h4><i class="fas fa-medal me-2"></i>Professional Development with Orcawise</h4>
+                <p>My collaboration with <strong>Orcawise</strong> in Dublin provided intensive, hands-on AI training that was both challenging and rewarding. The program balanced rigorous technical learning with practical application, resulting in two valuable certifications that enhance my MIS career prospects. Working directly with industry experts in Dublin's thriving tech ecosystem gave me real-world insights into AI implementation in business environments.</p>
+                
+                <div class="mt-4">
+                    <h5 class="text-center mb-4"><i class="fas fa-certificate me-2"></i>Earned Certifications</h5>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card border-success">
+                                <div class="card-header text-white text-center" style="background-color: #009639;">
+                                    <strong>AI Literacy & Governance</strong>
+                                </div>
+                                <div class="card-body p-2">
+                                    <img src="{{ url_for('static', filename='images/ai-literacy-certificate.png') }}" 
+                                         alt="AI Literacy & Governance Certificate" 
+                                         class="img-fluid rounded shadow-sm certificate-img"
+                                         data-toggle="modal" data-target="#cert1Modal">
+                                    <div class="text-center mt-2">
+                                        <small class="text-muted">Click to view full size</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card border-warning">
+                                <div class="card-header text-white text-center" style="background-color: #ff7f00;">
+                                    <strong>AI Prompt Engineer</strong>
+                                </div>
+                                <div class="card-body p-2">
+                                    <img src="{{ url_for('static', filename='images/ai-prompt-engineer-certificate.png') }}" 
+                                         alt="AI Prompt Engineer Certificate" 
+                                         class="img-fluid rounded shadow-sm certificate-img"
+                                         data-toggle="modal" data-target="#cert2Modal">
+                                    <div class="text-center mt-2">
+                                        <small class="text-muted">Click to view full size</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h6 class="card-title"><i class="fas fa-globe me-2"></i>Cultural Takeaways</h6>
+                                <p class="card-text small">Ireland's blend of ancient traditions with modern innovation taught me how cultures can preserve their identity while embracing technological advancement—a valuable lesson for international business.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card border-info">
+                            <div class="card-body">
+                                <h6 class="card-title"><i class="fas fa-rocket me-2"></i>Career Impact</h6>
+                                <p class="card-text small">The AI certifications and Dublin tech exposure positioned me as a more competitive candidate for MIS roles, especially those involving AI integration and digital transformation.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Certificate Modals -->
+<div class="modal fade" id="cert1Modal" tabindex="-1" aria-labelledby="cert1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cert1ModalLabel">AI Literacy & Governance Certificate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="{{ url_for('static', filename='images/ai-literacy-certificate.png') }}" 
+                     alt="AI Literacy & Governance Certificate" 
+                     class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cert2Modal" tabindex="-1" aria-labelledby="cert2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cert2ModalLabel">AI Prompt Engineer Certificate</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="{{ url_for('static', filename='images/ai-prompt-engineer-certificate.png') }}" 
+                     alt="AI Prompt Engineer Certificate" 
+                     class="img-fluid">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Photo Modals -->
+<div class="modal fade" id="groupModal" tabindex="-1" aria-labelledby="groupModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="groupModalLabel">Study Abroad Team - Dublin Training</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="{{ url_for('static', filename='images/study-abroad-group.jpg') }}" 
+                     alt="Study Abroad Group Photo" 
+                     class="img-fluid">
+                <p class="mt-2 text-muted">Our incredible study abroad cohort during our AI training program in Dublin</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="guinnesModal" tabindex="-1" aria-labelledby="guinnesModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="guinnesModalLabel">Guinness Experience - Dublin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="{{ url_for('static', filename='images/guinness-experience.jpg') }}" 
+                     alt="Guinness Storefront Experience" 
+                     class="img-fluid">
+                <p class="mt-2 text-muted">Exploring Dublin's most famous brewery and cultural landmark</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="cliffsModal" tabindex="-1" aria-labelledby="cliffsModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cliffsModalLabel">Cliffs of Moher Adventure</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="{{ url_for('static', filename='images/cliffs-of-moher.jpg') }}" 
+                     alt="Cliffs of Moher Adventure" 
+                     class="img-fluid">
+                <p class="mt-2 text-muted">Taking in the breathtaking views at Ireland's most dramatic coastal cliffs</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="fortyFootModal" tabindex="-1" aria-labelledby="fortyFootModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="fortyFootModalLabel">The Forty Foot - Dublin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body text-center">
+                <img src="{{ url_for('static', filename='images/forty-foot.jpg') }}" 
+                     alt="Forty Foot Experience" 
+                     class="img-fluid">
+                <p class="mt-2 text-muted">Our group at the famous Forty Foot swimming spot in Sandycove, a beloved Dublin landmark</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<style>
+    .certificate-img, .photo-img {
+        cursor: pointer;
+        transition: transform 0.3s ease;
+    }
+    
+    .certificate-img:hover, .photo-img:hover {
+        transform: scale(1.05);
+    }
+    
+    .photo-img {
+        height: 200px;
+        object-fit: cover;
+        width: 100%;
+    }
+</style>
+{% endblock %}

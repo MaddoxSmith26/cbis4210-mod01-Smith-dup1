@@ -1,7 +1,94 @@
 {% extends "base.html" %}
 
 {% block content %}
-<h1>About</h1>
-<br>
-<p>This website is designed to display example data tables using Pandas and Flask operations. Users can perform basic CRUD operations to add, manipulate, and sort records. A calculation of average points per player will also be available.</p>
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-body">
+                <h1 class="text-center mb-4">
+                    <i class="fas fa-globe-europe me-3"></i>My Study Abroad Adventure
+                </h1>
+                
+                <p class="lead text-center mb-4">During my International Design Thinking and AI study abroad program (May 11 - June 1, 2025), I embarked on an incredible journey across Ireland, Germany, and France. This transformative experience combined cutting-edge AI training, international collaboration, and cultural immersion that shaped my perspective on global business and technology.</p>
+                
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100" style="border-color: #009A49;">
+                            <div class="card-header text-center" style="background: linear-gradient(90deg, #009A49 33%, #FFFFFF 33%, #FFFFFF 66%, #FF7900 66%); color: #000000;">
+                                <i class="fas fa-clover me-2"></i>Ireland
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>AI Development Training:</strong> Participated in hands-on AI development training with Orcawise in Dublin. Learned cutting-edge AI technologies and their practical applications in business environments.</p>
+                                <p class="card-text small"><em>Key experiences: AI literacy & governance training, prompt engineering, and exploring Dublin's vibrant tech scene.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100" style="border-color: #000000;">
+                            <div class="card-header text-white text-center" style="background: linear-gradient(90deg, #000000 33%, #FF0000 33%, #FF0000 66%, #FFCC00 66%);">
+                                <i class="fas fa-castle me-2"></i>Germany
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>SAP & Design Thinking:</strong> Collaborated with University of Muenster MIS students on a design thinking project for Viadee, a German IT consulting company. Visited SAP headquarters in Walldorf to learn about digital innovations.</p>
+                                <p class="card-text small"><em>Key experiences: International teamwork, business process analysis, and exposure to enterprise software solutions at SAP.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100" style="border-color: #0055A4;">
+                            <div class="card-header text-center" style="background: linear-gradient(90deg, #0055A4 33%, #FFFFFF 33%, #FFFFFF 66%, #EF4135 66%); color: #000000;">
+                                <i class="fas fa-landmark me-2"></i>France
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text"><strong>Cultural Immersion:</strong> Extended my European experience to explore French culture, art, and business practices. This cultural immersion complemented my technical learning with broader European perspectives.</p>
+                                <p class="card-text small"><em>Key experiences: European business culture, art and architecture appreciation, and understanding global market dynamics.</em></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="row mb-4">
+                    <div class="col-md-4 mb-3">
+                        <img src="{{ url_for('static', filename='images/About_Ireland.jpg') }}" class="img-fluid rounded shadow" alt="Group photo from Ireland">
+                        <p class="text-center mt-2 small text-muted">Study abroad group in Ireland</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="{{ url_for('static', filename='images/About_Germany.jpg') }}" class="img-fluid rounded shadow" alt="Group photo from Germany">
+                        <p class="text-center mt-2 small text-muted">Study abroad group in Germany</p>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <img src="{{ url_for('static', filename='images/About_France.jpg') }}" class="img-fluid rounded shadow" alt="Group photo from France">
+                        <p class="text-center mt-2 small text-muted">Study abroad group in France</p>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-4">
+                    <div class="alert alert-info">
+                        <h5><i class="fas fa-lightbulb me-2"></i>Program Impact</h5>
+                        <p class="mb-2">This study abroad program perfectly aligned with my MIS degree, providing practical experience in:</p>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <ul class="list-unstyled text-left">
+                                    <li><i class="fas fa-check text-success me-2"></i>AI Technologies & Implementation</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>International Business Collaboration</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Design Thinking Methodologies</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="list-unstyled text-left">
+                                    <li><i class="fas fa-check text-success me-2"></i>Enterprise Software Solutions (SAP)</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Cross-Cultural Communication</li>
+                                    <li><i class="fas fa-check text-success me-2"></i>Global Technology Trends</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-muted">Click on the country tabs above to learn more about my specific experiences in each destination!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}
